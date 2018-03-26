@@ -1,0 +1,109 @@
+html,body,h1,h2,h3,h4,h5,p,td,th{padding:0;margin:0}
+h1,h2,h3,h4,h5,td,th,strong{font-weight: normal;font-size: inherit}
+ul,li{list-style:none;padding:0;margin:0}
+input{border:1px solid #ccc;outline: none}
+table{width: 100%;border-collapse:collapse;border-spacing:0}
+a{text-decoration: none}
+a:hover{text-decoration: underline}
+*{-webkit-box-sizing: border-box;box-sizing: border-box}
+body{background: #ccc;font-size: 12px}
+
+.box{
+    width:850px;
+    height:630px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border:1px solid #ccc;
+    background: #FFD39B;
+    margin: 20px auto;
+}
+
+.box .canvas {
+        border:none !important;
+    }
+
+.box .canvas-pieces{
+        position: absolute;
+        top:-10px;
+        left:-10px;
+    }
+
+.box .game-box {
+        position: relative;
+        width:506px;
+        height:506px;
+        border:1px solid black;
+        border-bottom: none;
+    }
+
+.box .game-box .event-box {
+            position: absolute;
+            top:-10px;
+            left:-10px;
+            width:526px;
+            height:526px;
+            z-index:2;
+        }
+
+.box .game-box i {
+            position: absolute;
+            width:20px;
+            height:20px;
+            border-radius: 50%;
+        }
+
+.box .game-box .pieces-black{
+            background: black;
+        }
+
+.box .game-box .pieces-white{
+            background: white;
+        }
+
+.box .model{
+        display: inline-block;
+        width:36px;
+        height:36px;
+        border-right:1px solid black;
+        border-bottom: 1px solid black;
+        vertical-align: top;
+    }
+
+.box span:nth-of-type(14n) {
+        border-right:none;
+    }
+
+.box .control-box {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height:506px;
+        margin:100px 0 0 50px ;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column
+    }
+
+.box .control-box>div{margin-bottom:10px;}
+
+.box .control-box button{
+            padding:5px;
+            min-width:100px;
+            margin-left:10px;}
+
+.box .control-box .show-btn,.box .control-box .reset-btn,.box .control-box .active {
+            margin-bottom:10px;
+            background: #cccccc;
+            font-weight: bold;
+            color:red;}
